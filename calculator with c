@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+   int main()
+   {
+
+        double sayi1, sayi2;
+       printf("ilk sayiyi giriniz:");
+        scanf("%lf", &sayi1);
+
+       printf("ikinci sayiyi giriniz:");
+        scanf("%lf", &sayi2);
+
+      printf("yapacaginiz islemi secin:");
+        printf("\n 1-Toplama\n 2-cikarma\n 3-carpma\n 4-bolme");
+        int islem ;
+         scanf("%d", &islem);
+
+        switch (islem)
+         {
+            case 1:
+                printf("%lf\n" , sayi1+sayi2);
+                break;
+
+            case 2:
+                printf("%lf" ,sayi1-sayi2);
+                break;
+            case 3:
+                printf("%lf" ,sayi1*sayi2);
+                break;
+            case 4:
+                printf("%lf" ,sayi1/sayi2);
+                break;
+          }
+    }
+
+
